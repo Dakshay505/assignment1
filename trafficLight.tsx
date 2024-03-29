@@ -8,15 +8,15 @@ const Home = () => {
   const redClass = `w-[50px] h-[50px] rounded-full bg-white ${light=== "red" ? "bg-red-500" : "bg-white"}`;
   const yellowClass = `w-[50px] h-[50px] rounded-full bg-white ${light=== "yellow" ? "bg-yellow-500" : "bg-white"}`;
   if(light === "yellow"){
-    setInterval(()=>{
+    setTimeout(()=>{
       setLight("red")
     },500)
   }else if(light === "red"){
-    setInterval(()=>{
+    setTimeout(()=>{
       setLight("green")
     },5000)
   }else{
-    setInterval(()=>{
+    setTimeout(()=>{
       setLight("yellow")
     },4000)
   }
