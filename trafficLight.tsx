@@ -4,9 +4,9 @@ import { useState } from "react"
 const Home = () => {
   const [light , setLight] = useState("green");
 
-  const greenClass = `w-[50px] h-[50px] rounded-full bg-white ${light=== "green" ? "bg-green-500" : "bg-white"}`;
-  const redClass = `w-[50px] h-[50px] rounded-full bg-white ${light=== "red" ? "bg-red-500" : "bg-white"}`;
-  const yellowClass = `w-[50px] h-[50px] rounded-full bg-white ${light=== "yellow" ? "bg-yellow-500" : "bg-white"}`;
+  const greenClass = `w-[50px] h-[50px] rounded-full ${light=== "green" ? "bg-green-500" : "bg-white"}`;
+  const redClass = `w-[50px] h-[50px] rounded-full ${light=== "red" ? "bg-red-500" : "bg-white"}`;
+  const yellowClass = `w-[50px] h-[50px] rounded-full ${light=== "yellow" ? "bg-yellow-500" : "bg-white"}`;
   if(light === "yellow"){
     setTimeout(()=>{
       setLight("red")
